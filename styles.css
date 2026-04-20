@@ -1,0 +1,42 @@
+body {
+	background: black;
+	color: lime;
+	font: 1vw "Courier New";
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+table {
+	border: 1px solid lime;
+}
+
+.flexbox {
+	display: flex;
+}
+
+.flexbox .stretch {
+	flex: 1;
+}
+
+.flexbox .normal {
+	flex: 0;
+}
+
+.flexbox div input {
+	field-sizing: content;
+	width: 100%;
+	background-color: transparent;
+	color: lime;
+	font: 1vw "Courier New";
+	caret-shape: block;
+	border: none;
+	padding: 0;
+	outline: none;
+}
+
+.flexbox div span {
+	white-space: nowrap;
+}
