@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onload="initReactor()">
+<h1>CHERNOBYL SIMULATOR</h1>
+
+<div id="aim"></div>
+
+<div class="grid">
+	<div>
+		<canvas id="chCanvas" width="400" height="220"></canvas>
+		<div id="status2"></div>
+		<div id="DEBUG"></div>
+	</div>
+
+	<div id="chCommand" style="width:calc(100% - 10px); height:100%; padding:5px; border:2px solid lime;">
+		<div id="chStdout"></div>
+
+		<section class="flexbox">
+			<div class="normal">
+				<b><span class="user">guest</span>@terminal:~$</b>&nbsp;
+			</div>
+			<div class="stretch">
+				<input id="chStdin" type="text" autocomplete="off">
+			</div>
+		</section>
+	</div>
+</div>
+	<script src="https://cdn.jsdelivr.net/gh/HoujenHuang/chernobyl-simulator@main/ch.js"></script>
+</body>
+</html>
